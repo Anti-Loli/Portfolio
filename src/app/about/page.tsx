@@ -4,7 +4,6 @@ export default function About(){
     <div>
      
       About Page
-      
         
     </div>
   );
