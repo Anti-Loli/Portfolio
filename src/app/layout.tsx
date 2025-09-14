@@ -24,13 +24,21 @@ export default function RootLayout({children,}: Readonly<{ children: React.React
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="navbar">
-        <Link href = "/"> home</Link>
-        <Link href = "/about"> about</Link>
-        <Link href = "/links"> links</Link>
-        <Link href = "/work"> work</Link>
-        <Link href = "/contact"> contact</Link>
-        </div>
+
+        <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}> 
+          <nav>
+            <ul>
+              <Link href = "/"> home</Link>
+              <Link href = "/about"> about</Link>
+              <Link href = "/links"> links</Link>
+              <Link href = "/work"> work</Link>
+              <Link href = "/contact"> contact</Link> 
+            </ul>
+          </nav>
+          <div>
+            Hunter Hockman
+          </div>
+        </header>
 
         {children}
       </body>
