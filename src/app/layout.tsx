@@ -26,7 +26,7 @@ export default function RootLayout({children,}: Readonly<{ children: React.React
       >
 
         <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}> 
-          <nav>
+          <nav style={{ flexGrow: 1, display: 'flex', justifyContent: 'center'}}>
             <ul>
               <Link href = "/"> home</Link>
               <Link href = "/about"> about</Link>
