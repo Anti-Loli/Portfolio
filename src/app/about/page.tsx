@@ -1,10 +1,10 @@
+import Profile from "../components/Profile";
 
 export default function About(){
     return (
-    <div>
-     
-      About Page
-        
-    </div>
+    
+    <main className="flex justify-center items-center h-screen">
+      <Profile username="Paul" />
+    </main>
   );
 }
