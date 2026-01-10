@@ -6,11 +6,11 @@ export default function XboxProfile({ username }: { username: string }) {
     <main className="bg-white shadow-lg rounded-xl p-6 justify-center items-start h-auto max-h-[80dvh] w-auto mx-auto my-auto flex gap-x-4">
          
          {/*Left green info side*/}
-        <div className="grid grid-flow-col grid-rows-4 justify-items-center"> 
+        <div className="grid grid-flow-col grid-rows-6 justify-items-center"> 
           <div> 
             <ProfileButton> Professional </ProfileButton>
             </div> 
-              <div className=" outline-2 px-4 py-10 bg-[#107C10] text-white row-span-3 text-lg">Hi I’m Hunter a software developer with specialties in game and simulation programming.  I... 
+              <div className=" outline-2 px-4 py-10 bg-[#107C10] text-white row-span-4 text-lg">Hi I’m Hunter a software developer with specialties in game and simulation programming.  I... 
               <ul>
                   <li>design and develop gameplay mechanics in Unity and/or Unreal Engine,</li>
                   <li>develop desktop applications using .NET,</li>
@@ -29,11 +29,11 @@ export default function XboxProfile({ username }: { username: string }) {
         </div> 
          
          {/*Right profile side*/}
-        <div className="grid grid-flow-col grid-rows-4 justify-items-center"> 
+        <div className="grid grid-flow-col grid-rows-6 justify-items-center "> 
               <div> 
                 <ProfileButton href = "/about(personal)"> Personal </ProfileButton> 
                 </div> 
-            <div className="outline-2 row-span-3"> 
+            <div className="outline-2 row-span-4"> 
               <div className=" bg-gray-500 text-white">Hunter Hockman</div>
               <div className="grid grid-flow-col grid-cols-2">
                 <Image
