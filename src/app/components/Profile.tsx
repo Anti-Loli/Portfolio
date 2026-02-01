@@ -35,7 +35,7 @@ export default function XboxProfile({ username }: { username: string }) {
                 </div> 
             <div className="outline-2 row-span-4"> 
               <div className=" bg-gray-500 text-white">Hunter Hockman</div>
-              <div className="grid grid-flow-col grid-cols-2">
+              <div className="grid grid-flow-col grid-cols-2 text-lg">
                 <Image
                   src="/ProfilePicture.jpg"
                   alt="Profile picture of the website owner"
@@ -50,9 +50,9 @@ export default function XboxProfile({ username }: { username: string }) {
                 </ul>
               </div>
 
-              <div className=" bg-gray-500 text-white">Maryland</div>
+              <div className=" bg-gray-500 text-white text-xl">Maryland</div>
 
-              <div className=" bg-gray-500 text-white">
+              <div className=" bg-gray-500 text-white  text-xl leading-relaxed">
                 Tools List
                 <ul>
                     <li>Tools: Unreal Engine, Unity 2D/3D, Blender, Visual Studio 2022, Visual Studio Code,</li>
