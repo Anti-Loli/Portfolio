@@ -29,40 +29,39 @@ export default function XboxProfile({ username }: { username: string }) {
         </div> 
          
          {/*Right profile side*/}
-        <div className="grid grid-flow-col grid-rows-6 justify-items-center "> 
+        <div className="grid grid-flow-col grid-rows-5 justify-items-center "> 
               <div> 
                 <ProfileButton href = "/about(personal)"> Personal </ProfileButton> 
-                </div> 
-            <div className="outline-2 row-span-4"> 
-              <div className=" bg-gray-500 text-white">Hunter Hockman</div>
-              <div className="grid grid-flow-col grid-cols-2 text-lg">
+              </div> 
+            <div className="row-span-4 bg-gray-500 text-white"> {/*Try setting the length and width to set values instead of based on content. Make sure they scale and aren't hard numbers*/}
+              <div className="text-xl">Hunter Hockman</div>
+              <div className="grid grid-flow-col bg-white text-black"> 
                 <Image
                   src="/ProfilePicture.jpg"
                   alt="Profile picture of the website owner"
-                  width={100}
+                  width={125}
                   height={75}
                 /> 
 
-                <ul>
+                <ul className="text-left  text-xl">
                   <li>Software Developer with a</li>
-                  <li>Specialty in game and simulation programming</li> 
+                  <li>Specialty in game and simulation programming</li>
                   <li>Correctional Officer for the FBOP</li>
                 </ul>
               </div>
 
-              <div className=" bg-gray-500 text-white text-xl">Maryland</div>
+              <div className="text-xl">Maryland</div>
 
-              <div className=" bg-gray-500 text-white  text-xl leading-relaxed">
+              <div className="text-xl leading-12.5"> 
                 Tools List
                 <ul>
-                    <li>Tools: Unreal Engine, Unity 2D/3D, Blender, Visual Studio 2022, Visual Studio Code,</li>
-                    <li>Notion, GameMaker Studio 2, MySQL Workbench, Ubuntu, Github</li>
+                    <li>Tools: Unreal Engine, Unity 2D/3D, Blender, Visual Studio 2022,</li>
+                    <li>Visual Studio Code, Notion, GameMaker Studio 2, MySQL Workbench, Github, Ubuntu</li>
                 </ul>
 
                 <ul>
-                    <li>Development: C++, C#, .NET,  Java, JavaScript,</li>
-                    <li>HTML, CSS, PHP, React, React Native, Python,</li>
-                    <li>Linux, x86 64-bit Assembly</li>
+                    <li>Development: C++, C#, .NET, Java, HTML, CSS, PHP, React, React Native, </li>
+                    <li>Next.JS, JavaScript, Typescript, Python, Linux, x86 64-bit Assembly</li>
                 </ul>
               </div>
             </div>
