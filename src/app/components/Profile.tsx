@@ -50,18 +50,17 @@ export default function XboxProfile({ username }: { username: string }) {
                 </ul>
               </div>
 
-              <div className="text-xl">Maryland</div>
+              <div className="text-xl pl-2.5 pt-2.5"> Maryland</div>
 
-              <div className="text-xl leading-12.5"> 
-                Tools List
+              <div className="text-xl leading-12.5 pl-2.5"> 
                 <ul>
-                    <li>Tools: Unreal Engine, Unity 2D/3D, Blender, Visual Studio 2022,</li>
-                    <li>Visual Studio Code, Notion, GameMaker Studio 2, MySQL Workbench, Github, Ubuntu</li>
+                    <li> Tools: Unreal Engine, Unity 2D/3D, Blender, Visual Studio 2022,</li>
+                    <li> Visual Studio Code, Notion, GameMaker Studio 2, MySQL Workbench, Github, Ubuntu</li>    {/*Seperate lists into two different divs and see if that can fix spacing issue*/}
                 </ul>
 
                 <ul>
-                    <li>Development: C++, C#, .NET, Java, HTML, CSS, PHP, React, React Native, </li>
-                    <li>Next.JS, JavaScript, Typescript, Python, Linux, x86 64-bit Assembly</li>
+                    <li> Development: C++, C#, .NET, Java, HTML, CSS, PHP, React, React Native, </li>
+                    <li> Next.JS, JavaScript, Typescript, Python, Linux, x86 64-bit Assembly</li>
                 </ul>
               </div>
             </div>
