@@ -9,7 +9,7 @@ type ButtonProps = {
 
 export default function Button({children, href, onClick, className}: ButtonProps)
 {
-    const baseStyles = "w-72 h-48 bg-[#107C10] text-white rounded-lg cursor-pointer text-base block m-3";
+    const baseStyles = "w-72 h-48 bg-[#107C10] text-white font-bold rounded-lg cursor-pointer text-base block m-3";
 
     if (href)
     {
