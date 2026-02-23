@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function XboxProfile({ username }: { username: string }) {
   return (
-    <main className="bg-white shadow-lg rounded-xl p-6 justify-center items-start mx-auto my-auto flex gap-x-4">
+    <main className="bg-white shadow-lg rounded-xl p-6 justify-center items-start mx-auto my-auto">
         <div className="grid grid-cols-2 gap-6">
           {/*Left green info side*/}
           <div className="flex flex-col gap-4"> 
@@ -74,7 +74,5 @@ export default function XboxProfile({ username }: { username: string }) {
           </div> 
         </div>
       </main>
-
-
   );
 }

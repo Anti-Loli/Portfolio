@@ -19,6 +19,7 @@ export default function XboxProfile({ username }: { username: string }) {
                     <li>Reading</li>
                     <li>Writing</li>
                     <li>Working out</li>
+                    <li>Collecting Comics</li>
                 </ul> 
 
                   <div className="font-bold text-2xl">Favorites:</div>
@@ -27,7 +28,6 @@ export default function XboxProfile({ username }: { username: string }) {
                     <li>Movie: TMNT (1990) </li>
                     <li>Show: Frieren: Beyond Journey&apos;s End</li>
                     <li>Game: Clair Obscur: Expedition 33</li>
-                    <li>Book: Narnia</li>
                     <li>Comic: Power Rangers</li>
                 </ul> 
                 </div> 
