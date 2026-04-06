@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import Image from "next/image";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,8 +36,14 @@ export default function RootLayout({children,}: Readonly<{ children: React.React
               <Link href = "/contact"> contact</Link> 
             </ul>
           </nav>
-          <div>
-            Hunter Hockman
+          <div className="flex flex-row gap-2 p-2">
+            Hunter Hockman 
+            <Image
+              src="/ProfilePicture.jpg"
+              alt="Profile picture of the website owner"
+              width={50}
+              height={25}
+              /> 
           </div>
         </header>
 
