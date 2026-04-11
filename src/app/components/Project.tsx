@@ -14,7 +14,7 @@ type ProjectProps= {
 
 export default function Project({imageSource, downloadURL, repoURL, title, description, toolsUsed, languagesUsed} : ProjectProps){
     return (
-        <main className=" flex flex-row gap-40">
+        <main className=" flex flex-row gap-40 mt-16">
            {/*Buttons*/}
             <div>
                 <Button href={downloadURL}> Download </Button>

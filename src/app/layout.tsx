@@ -26,9 +26,9 @@ export default function RootLayout({children,}: Readonly<{ children: React.React
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
 
-        <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}> 
-          <nav style={{ flexGrow: 1, display: 'flex', justifyContent: 'center'}}>
-            <ul>
+        <header className = "flex flex-row justify-between items-center"> 
+          <nav className = "flex grow justify-center">
+            <ul className="flex flex-row text-5xl text-white gap-36 mt-14">
               <Link href = "/"> home</Link>
               <Link href = "/about"> about</Link>
               <Link href = "/links"> links</Link>
@@ -36,6 +36,8 @@ export default function RootLayout({children,}: Readonly<{ children: React.React
               <Link href = "/contact"> contact</Link> 
             </ul>
           </nav>
+          
+          {/*
           <div className="flex flex-row gap-2 p-2">
             Hunter Hockman 
             <Image
@@ -45,6 +47,7 @@ export default function RootLayout({children,}: Readonly<{ children: React.React
               height={25}
               /> 
           </div>
+          */}
         </header>
 
         {children}
