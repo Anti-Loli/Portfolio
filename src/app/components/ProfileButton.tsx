@@ -9,7 +9,7 @@ type ButtonProps = {
 
 export default function ProfileButton({children, href, onClick, className}: ButtonProps)
 {
-    const baseStyles = "w-192 h-24 bg-[#63666A] text-white font-bold rounded-lg cursor-pointer text-base block m-3";
+    const baseStyles = "w-192 h-24 bg-[#63666A] text-white font-bold rounded-lg cursor-pointer text-base m-3 flex flex-col justify-center items-center";
 
     if (href)
     {

@@ -4,15 +4,6 @@ import "./globals.css";
 import Link from "next/link";
 import Image from "next/image";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -22,23 +13,9 @@ export const metadata: Metadata = {
 export default function RootLayout({children,}: Readonly<{ children: React.ReactNode;}>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-
-        <header className = "flex flex-row justify-between items-center"> 
-          <nav className = "flex grow justify-center">
-            <ul className="flex flex-row text-5xl text-white gap-36 mt-14">
-              <Link href = "/"> home</Link>
-              <Link href = "/about"> about</Link>
-              <Link href = "/links"> links</Link>
-              <Link href = "/work"> work</Link>
-              <Link href = "/contact"> contact</Link> 
-            </ul>
-          </nav>
-          
-          {/*
-          <div className="flex flex-row gap-2 p-2">
+      <body className= "flex flex-col min-h-screen">
+        <header className = "grid grid-cols-5 place-items-center"> 
+          <div className="flex flex-row gap-2 p-2 text-white text-xl items-center col-start-5">
             Hunter Hockman 
             <Image
               src="/ProfilePicture.jpg"
@@ -47,10 +24,20 @@ export default function RootLayout({children,}: Readonly<{ children: React.React
               height={25}
               /> 
           </div>
-          */}
-        </header>
 
+          <nav className = "flex justify-center col-start-3">
+            <ul className="flex flex-row text-5xl text-white gap-36">
+              <Link href = "/"> home</Link>
+              <Link href = "/about"> about</Link>
+              <Link href = "/links"> links</Link>
+              <Link href = "/work"> work</Link>
+              <Link href = "/contact"> contact</Link> 
+            </ul>
+          </nav>
+        </header>
+          
         {children}
+      
       </body>
     </html>
   );

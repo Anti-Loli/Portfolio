@@ -3,36 +3,36 @@ import Image from 'next/image'
 
 export default function AboutPersonal(){
       return (
-    <main className="flex justify-center items-center h-screen">
+    <main className="flex flex-1 justify-center items-center h-screen">
           <div className="bg-white shadow-lg rounded-xl p-6 justify-center items-start mx-auto my-auto flex gap-x-4">
                   <div className="grid grid-cols-2 gap-6">
                     {/*Left green info side*/}
                     <div className="flex flex-col gap-4"> 
-                      <div> 
+                        <div> 
                         <ProfileButton href="/about"> Professional </ProfileButton>
                         </div> 
                           <div className="outline-2 px-4 py-10 bg-[#107C10] text-white"> 
                             
                             <p className="text-xl">Hobbies list</p>
                             
-                          <ul className="list-disc pl-4 text-lg leading-8">
+                            <ul className="list-disc pl-4 text-lg leading-8">
                               <li>Playing video games</li>
                               <li>Reading</li>
                               <li>Writing</li>
                               <li>Working out</li>
                               <li>Collecting Comics</li>
-                          </ul> 
+                            </ul> 
           
                             <div className="font-bold text-2xl">Favorites:</div>
           
-                          <ul className="text-lg  leading-8">
+                            <ul className="text-lg  leading-8">
                               <li>Movie: TMNT (1990) </li>
                               <li>Show: Frieren: Beyond Journey&apos;s End</li>
                               <li>Game: Clair Obscur: Expedition 33</li>
                               <li>Comic: Power Rangers</li>
-                          </ul> 
+                            </ul> 
                           </div> 
-                    </div> 
+                      </div> 
                     
                     {/*Right profile side*/}
                     <div className="flex flex-col gap-4"> 
@@ -74,7 +74,7 @@ export default function AboutPersonal(){
                         </div>
                     </div> 
                   </div>
-                </div>
+            </div>
         </main>
   );
 }

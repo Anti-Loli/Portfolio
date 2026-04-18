@@ -2,9 +2,9 @@ import Project from "../components/Project";
 
 export default function Talimentals(){
   return (
-    <main className="flex justify-center items-stretch h-screen bg-center bg-contain" style={{backgroundImage: `url(/TalimentalsWBPic.png)`}}>
+    <main className="flex flex-1 justify-center items-stretch h-screen bg-center bg-cover" style={{backgroundImage: `url(/TalimentalsSC.png)`}}>
          <Project
-            imageSource="/Steven.jpg"
+            imageSource="/TalimentalsBG.png"
             downloadURL="https://hunter-hawkman.itch.io/talimentals"
             repoURL="https://github.com/Anti-Loli/Gameder"
             title="Tailmentals"

@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function About(){
     return (
     
-    <main className="flex justify-center items-center h-screen">
+    <main className="flex flex-1 justify-center items-center h-screen">
       <div className="bg-white shadow-lg rounded-xl p-6 justify-center items- mx-auto my-auto">
               <div className="grid grid-cols-2 gap-6">
                 {/*Left green info side*/}

@@ -2,9 +2,7 @@ import WorkButton from '../components/WorkButton';
 
 export default function Work(){
     return (
-    <div>
-     
-     <main className="flex justify-center items-center h-screen">
+     <main className="flex flex-1 justify-center items-center h-screen">
        <WorkButton
         href = "/links"
         imageSource="/BurgerWBPic.png"
@@ -45,6 +43,5 @@ export default function Work(){
         date="2/22/23"
       />
      </main>
-    </div>
   );
 }

@@ -14,7 +14,7 @@ type ProjectProps= {
 
 export default function Project({imageSource, downloadURL, repoURL, title, description, toolsUsed, languagesUsed} : ProjectProps){
     return (
-        <main className=" flex flex-row gap-40 mt-16">
+        <main className=" flex flex-1 gap-16 justify-center items-center ml-40">
            {/*Buttons*/}
             <div>
                 <Button href={downloadURL}> Download </Button>
@@ -25,9 +25,9 @@ export default function Project({imageSource, downloadURL, repoURL, title, descr
             <div>
                 <Image
                     src={imageSource}
-                    alt="Cover picture for this given project"
-                    height={256}
-                    width={256}
+                    alt="Screenshot of this given project"
+                    height={1024}
+                    width={768}
                 />
             </div>
             
