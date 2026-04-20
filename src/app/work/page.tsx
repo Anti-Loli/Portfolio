@@ -4,7 +4,7 @@ export default function Work(){
     return (
      <main className="flex flex-1 justify-center items-center h-screen">
        <WorkButton
-        href = "/links"
+        href = "/burgers"
         imageSource="/BurgerWBPic.png"
         name="Bald Eagle Burgers"
         engine="Unreal Engine 5"
@@ -12,9 +12,9 @@ export default function Work(){
       />
 
       <WorkButton
-        href = "/links"
-        imageSource="/ChoasWBPic.jpg"
-        name="Choas at Circus Baby's"
+        href = "/chaos"
+        imageSource="/ChaosWBPic.jpg"
+        name="Chaos at Circus Baby's"
         engine="Unreal Engine 5"
         date="1/10/2024"
       />
@@ -28,7 +28,7 @@ export default function Work(){
       />
 
       <WorkButton
-        href = "/links"
+        href = "/gamder"
         imageSource="/GamderWBPic.png"
         name="Gamder"
         engine="React Native"
@@ -36,7 +36,7 @@ export default function Work(){
       />
 
       <WorkButton
-        href = "/links"
+        href = "/TimeForce"
         imageSource="/TimeForceWBPic.png"
         name="Power Rangers: Quantum Quest"
         engine="Unity"
