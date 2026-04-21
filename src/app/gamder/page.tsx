@@ -2,7 +2,7 @@ import Project from "../components/Project";
 
 export default function Talimentals(){
   return (
-    <main className="flex flex-1 justify-center items-stretch h-screen bg-center bg-cover" style={{backgroundImage: `url(/TalimentalsSC.png)`}}>
+    <main className="flex flex-1 justify-center items-stretch h-screen bg-center bg-cover">
          <Project
             imageSource="/GamderWBPic.png"
             downloadURL="/nopage"

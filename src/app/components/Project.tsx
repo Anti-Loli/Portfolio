@@ -32,16 +32,16 @@ export default function Project({imageSource, downloadURL, repoURL, title, descr
             </div>
             
             {/*Text*/}
-            <div className="">
-                <p className="text-5xl text-white">
+            <div className=" text-white">
+                <p className="text-5xl">
                     {title}
                 </p>
 
-                <p className="text-3xl text-white">
+                <p className="text-3xl">
                     {description}
                 </p>
 
-                <div className="text-3xl text-white">
+                <div className="text-3xl">
                     Tools used:
                     <ul>
                         {toolsUsed.map((item, index) => (
@@ -50,7 +50,7 @@ export default function Project({imageSource, downloadURL, repoURL, title, descr
                     </ul>
                 </div>
 
-                <div className="text-3xl text-white">
+                <div className="text-3xl">
                     Languages used: 
                     <ul>
                             {languagesUsed.map((item, index) => (
