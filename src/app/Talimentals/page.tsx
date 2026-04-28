@@ -8,7 +8,7 @@ export default function Talimentals(){
             downloadURL="https://hunter-hawkman.itch.io/talimentals"
             repoURL="https://github.com/Anti-Loli/Gameder"
             title="Tailmentals"
-            description="A group project I made. IN A CAVE!!! WITH A BOX OF SCRAPS!!!"
+            description="A semester long group project to create a prototype from a previously made design document. The game is a monster battler RPG similar to Pokemon."
             toolsUsed={["Unity", "Github"]}
             languagesUsed={["C#"]}
          />

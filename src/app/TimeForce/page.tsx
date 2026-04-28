@@ -8,8 +8,8 @@ export default function TimeForce(){
             downloadURL="https://hunter-hawkman.itch.io/power-rangers-timeforce-quantum-quest"
             repoURL="/nopage"
             title="Power Rangers Time Force: Quantum Quest"
-            description="A project I made. IN A CAVE!!! WITH A BOX OF SCRAPS!!!"
-            toolsUsed={["Unity", "Github", "Visual Studio"]}
+            description="A two week assignment I turned into a fangame for fun. Play as the Quantum ranger from Power Rangers Time Force and escape from  a cave of mutants with the quantum morpher."
+            toolsUsed={["Unity", "Github", "Visual Studio", "LibreSprite"]}
             languagesUsed={["C#"]}
          />
     </main>

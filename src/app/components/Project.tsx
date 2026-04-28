@@ -14,7 +14,7 @@ type ProjectProps= {
 
 export default function Project({imageSource, downloadURL, repoURL, title, description, toolsUsed, languagesUsed} : ProjectProps){
     return (
-        <main className=" flex flex-1 gap-16 justify-center items-center ml-40">
+        <main className="flex flex-1 gap-16  items-center ml-30">
            {/*Buttons*/}
             <div>
                 <Button href={downloadURL}> Download </Button>
@@ -22,37 +22,37 @@ export default function Project({imageSource, downloadURL, repoURL, title, descr
             </div>
                 
             {/*Screenshot*/}
-            <div>
+            <div >
                 <Image
                     src={imageSource}
                     alt="Screenshot of this given project"
-                    height={1024}
-                    width={768}
+                    width={1000}
+                    height={720}
                 />
             </div>
             
             {/*Text*/}
             <div className=" text-white">
-                <p className="text-5xl">
+                <p className="text-5xl pb-2">
                     {title}
                 </p>
 
-                <p className="text-3xl">
+                <p className="text-2xl max-w-3xl pb-2">
                     {description}
                 </p>
 
-                <div className="text-3xl">
+                <div className="text-3xl pb-2">
                     Tools used:
-                    <ul>
+                    <ul className="text-2xl pb-2">
                         {toolsUsed.map((item, index) => (
                             <li key={index}>{item}</li>
                         ))}
                     </ul>
                 </div>
 
-                <div className="text-3xl">
+                <div className="text-3xl pb-2">
                     Languages used: 
-                    <ul>
+                    <ul className="text-2xl">
                             {languagesUsed.map((item, index) => (
                             <li key={index}>{item}</li>
                         ))}

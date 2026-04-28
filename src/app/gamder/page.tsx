@@ -4,7 +4,7 @@ export default function Talimentals(){
   return (
     <main className="flex flex-1 justify-center items-stretch h-screen bg-center bg-cover">
          <Project
-            imageSource="/GamderWBPic.png"
+            imageSource="/GamderWBPic2.png"
             downloadURL="/nopage"
             repoURL="https://github.com/Anti-Loli/Gameder"
             title="Gamder"
