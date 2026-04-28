@@ -4,14 +4,14 @@ import Image from 'next/image'
 export default function About(){
     return (
     
-    <main className="flex flex-1 justify-center items-center h-screen">
-      <div className="bg-white shadow-lg rounded-xl p-6 justify-center items- mx-auto my-auto">
+    <main className="flex flex-1 justify-center items-center">
+      <div className="bg-white shadow-lg rounded-xl p-6 mx-auto my-auto">
               <div className="grid grid-cols-2 gap-6">
                 {/*Left green info side*/}
                 <div className="flex flex-col gap-4"> 
                   <div> 
                     <ProfileButton className="w-192 h-24 !text-black bg-white rounded-lg cursor-pointer text-base block m-3"> Professional </ProfileButton>
-                    </div> 
+                  </div> 
                       <div className="outline-2 px-4 py-10 bg-[#107C10] text-white"> 
                         
                         <p className="text-xl">Hi I’m Hunter, a software developer with specialties in game and simulation programming.</p>

@@ -3,55 +3,40 @@ import Button from "../components/Button";
 export default function Links(){
     return (
     <main className="flex flex-1 justify-center items-center h-screen">
-          
-          <div>
-          
-          <Button>
-            LinkedIn 
-          </Button>
+      <div className="grid grid-cols-4">
+        
+        <Button href = "https://www.linkedin.com/in/hunter-hockman/">
+          LinkedIn 
+        </Button>
 
-          <Button>
-            Send an email 
-          </Button>
+        <Button href = "https://github.com/Anti-Loli">
+          GitHub 
+        </Button>
 
-         </div>
+        <Button  href = "https://hunter-hawkman.itch.io/">
+          Itch.io 
+        </Button>
 
-         <div>
-          
-          <Button>
-            GitHub 
-          </Button>
-
-          <Button>
+        <Button>
              
-          </Button>
+        </Button>
 
-         </div>
+        <Button href = "/contact">
+          Send an email 
+        </Button>
 
-         <div>
-          
-          <Button>
-            Itch.io 
-          </Button>
-
-          <Button>
+        <Button>
              
-          </Button>
+        </Button>
 
-         </div>
-
-         <div>
-          
-          <Button>
+        <Button>
             
-          </Button>
+        </Button>
 
-          <Button>
+        <Button>
             
-          </Button>
-          
-         </div>
-
-        </main>
+        </Button>
+      </div>
+    </main>
   );
 }
