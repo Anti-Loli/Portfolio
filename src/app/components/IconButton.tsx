@@ -35,13 +35,18 @@ export default function IconButton({children, href, onClick, className,imageSour
 
     return(
         <button onClick={onClick} className={`${baseStyles} ${className || ""}`}>
-            <Image
-                    src={imageSource}
-                    alt="Icon for the given button"
-                    width={64}
-                    height={64}
-                />
-            {children}
+            <div className="flex flex-1 items-center justify-center">
+                    <Image
+                        src={imageSource}
+                        alt="Icon for the given button"
+                        width={96}
+                        height={96}
+                    />
+                </div>
+
+                <div className="self-start pl-2 text-2xl">
+                    {children}
+                </div>
         </button>
     );
 }

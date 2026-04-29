@@ -1,29 +1,31 @@
 import Button from "../components/Button";
+import IconButton from "../components/IconButton";
+
 
 export default function Links(){
     return (
     <main className="flex flex-1 justify-center items-center h-screen">
       <div className="grid grid-cols-4">
         
-        <Button href = "https://www.linkedin.com/in/hunter-hockman/">
+        <IconButton imageSource = "/ButtonIcons/linkedin.png" href = "https://www.linkedin.com/in/hunter-hockman/">
           LinkedIn 
-        </Button>
+        </IconButton>
 
-        <Button href = "https://github.com/Anti-Loli">
+        <IconButton imageSource = "/ButtonIcons/github.png" href = "https://github.com/Anti-Loli">
           GitHub 
-        </Button>
+        </IconButton>
 
-        <Button  href = "https://hunter-hawkman.itch.io/">
+        <IconButton imageSource = "/ButtonIcons/itch-io.png" href = "https://hunter-hawkman.itch.io/">
           Itch.io 
-        </Button>
+        </IconButton>
 
         <Button>
              
         </Button>
 
-        <Button href = "/contact">
-          Send an email 
-        </Button>
+        <IconButton imageSource = "/ButtonIcons/send-email.png" href = "/contact">
+          Send an Email 
+        </IconButton>
 
         <Button>
              

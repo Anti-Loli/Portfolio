@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="flex flex-1 justify-center items-center">
       <div className="grid grid-cols-4">
-          <IconButton imageSource = "/disc.png" href = "/work">
+          <IconButton imageSource = "/ButtonIcons/disc.png" href = "/work">
             Work 
           </IconButton>
 
@@ -15,29 +15,29 @@ export default function Home() {
             <p className="text-4xl break-all ">and Correctional Officer</p>
           </Button>
 
-          <Button href = "/links">
+          <IconButton imageSource = "/ButtonIcons/link.png" href = "/links">
             Links 
-          </Button>
+          </IconButton>
 
-          <Button href = "/about">
+          <IconButton imageSource = "/ButtonIcons/person.png" href = "/about">
             About 
-          </Button>
+          </IconButton>
 
-          <Button href = "/contact">
-            Contact 
-          </Button>
+          <IconButton imageSource = "/ButtonIcons/mailbox.png" href = "/contact">
+            Work 
+          </IconButton>
 
-          <Button>
-            Fun Facts
-          </Button>
+          <IconButton imageSource = "/ButtonIcons/book.png">
+            Fun Facts 
+          </IconButton>
 
-          <Button>
-            Dark Mode On/Off
-          </Button>
+          <IconButton imageSource = "/ButtonIcons/dark-mode.png">
+            Dark Mode On/Off 
+          </IconButton>
 
-          <Button>
+          <IconButton imageSource = "/ButtonIcons/sound.png">
             Sound On/Off
-          </Button>
+          </IconButton>
           
           <Button/>
       </div>
