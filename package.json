@@ -9,15 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
-<<<<<<< Updated upstream
-    "next": "15.5.9",
-=======
-<<<<<<< HEAD
     "next": "^15.5.18",
-=======
-    "next": "15.5.9",
->>>>>>> 3780f2049e24909060f1fd499c4ca9d74c508942
->>>>>>> Stashed changes
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "resend": "^6.12.3"
