@@ -1,11 +1,10 @@
-"use server"
+export async function POST(req: Request)
+{
+    const body = await req.json();
 
-import type { NextApiRequest, NextApiResponse } from "next";
-
-export default async function handler(
-    req: NextApiRequest,
-    res: NextApiResponse
-){
-    
+    return Response.json({
+        success: true,
+        data: body,
+    })
 }
 
