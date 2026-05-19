@@ -24,7 +24,7 @@ export default function Home() {
           </IconButton>
 
           <IconButton imageSource = "/ButtonIcons/mailbox.png" href = "/contact">
-            Work 
+            Contact 
           </IconButton>
 
           <IconButton imageSource = "/ButtonIcons/book.png">

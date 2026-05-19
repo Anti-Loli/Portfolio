@@ -6,7 +6,7 @@ import { FormEvent } from 'react';
 
 export default function ContactPage(){
   
-  async function onSubmit(e: React.FormEvent<HTMLFormElement>) 
+  async function onSubmit(e: FormEvent<HTMLFormElement>) 
   {
     e.preventDefault();
 
