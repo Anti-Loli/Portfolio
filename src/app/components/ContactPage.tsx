@@ -3,27 +3,41 @@
 import Image from 'next/image'
 import { resolve } from 'path';
 import { FormEvent } from 'react';
+import { useState } from 'react';
 
 export default function ContactPage(){
   
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
   async function onSubmit(e: FormEvent<HTMLFormElement>) 
   {
-    e.preventDefault();
-
-    const form = e.currentTarget;
-    const formData = new FormData(form);
+    e.preventDefault();//prevents page from reloading
 
     const data = {
-        name: formData.get("name"),
-        email: formData.get("email"),
-        message: formData.get("message"),
+        name: name,
+        email: email,
+        message: message,
     };
 
+    
+    console.log(data);
+
+    const response = await fetch("/api/contact", {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data) 
+    });
+
+    if(response.ok)
+    {
+      
     console.log("Form submitted: ", data);
+    }
 
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-
-    alert("Email sent, jk I haven't coded that yet.")
   }
   
   return (
@@ -45,9 +59,9 @@ export default function ContactPage(){
               </p>
                           
                 <form className="flex flex-col gap-4" onSubmit={onSubmit}>
-                    <label className='text-2xl'>Name: <input className='outline-2' type="text" name="name" required /></label>
-                    <label className='text-2xl'>Email: <input className='outline-2' type="email" name="email" required/></label>
-                    <label className='text-2xl'>Message: <textarea className='outline-2 w-96' name="message" required/></label>
+                    <label className='text-2xl'>Name: <input className='outline-2' type="text" value={name} onChange={(e) => setName(e.target.value)} name="name" minLength={5} maxLength={50} required /></label>
+                    <label className='text-2xl'>Email: <input className='outline-2' type="email" value={email} onChange={(e) => setEmail(e.target.value)} name="email" required/></label>
+                    <label className='text-2xl'>Message: <textarea className='outline-2 w-96' name="message" value={message} onChange={(e) => setMessage(e.target.value)} maxLength={200} required/></label>
 
                     <button type ="submit" className = "bg-[#107C10] text-white text-3xl">
                        Send email
