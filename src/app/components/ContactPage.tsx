@@ -4,6 +4,12 @@ import Image from 'next/image'
 import { resolve } from 'path';
 import { FormEvent } from 'react';
 import { useState } from 'react';
+import type { Metadata } from "next";
+
+export const metadata: Metadata ={
+  title: "Contact"
+};
+
 
 export default function ContactPage(){
   

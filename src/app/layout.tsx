@@ -6,7 +6,10 @@ import Image from "next/image";
 
 
 export const metadata: Metadata = {
-  title: "Hunter Hockman",
+  title: {
+    default: "Hunter Hockman",
+    template: "%s | Hunter Hockman"
+  },
   description: "Portfolio website for Hunter Hockman",
 };
 

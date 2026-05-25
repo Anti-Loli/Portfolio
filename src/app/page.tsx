@@ -1,5 +1,11 @@
 import Button from "./components/Button";
 import IconButton from "./components/IconButton";
+import type { Metadata } from "next";
+
+export const metadata: Metadata ={
+  title: "Home"
+};
+
 
 export default function Home() {
   return (
