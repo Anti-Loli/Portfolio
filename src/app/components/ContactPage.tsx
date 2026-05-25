@@ -20,7 +20,6 @@ export default function ContactPage(){
         email: email,
         message: message,
     };
-
     
     console.log(data);
 
@@ -34,10 +33,10 @@ export default function ContactPage(){
 
     if(response.ok)
     {
-      
-    console.log("Form submitted: ", data);
+      console.log("Form submitted: ", data);
+      //user feedback
     }
-
+    //error handeling  
   }
   
   return (

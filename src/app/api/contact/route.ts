@@ -18,12 +18,19 @@ export async function POST(req: Request)
         }
         
         await resend.emails.send({
-            from: 'Contact Form <onboarding@resend.dev>',
-            to: 'HunterHockman@outlook.com',
+            from: 'Contact <contact@hhockman.com>',
+            to: ['HunterHockman@outlook.com'],
             subject: `Message from ${name}`,
             replyTo: email,
             text: message
         });
+
+        await resend.emails.send({
+            from: 'Contact <contact@hhockman.com>',
+            to: [email],
+            subject: `Confirmation Email for ${name}`,
+            text: 'Your message to Hunter Hockman using the contact form on hhockman.com has successfully sent.'
+        })
 
         return NextResponse.json({success: true});
     }
