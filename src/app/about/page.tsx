@@ -1,5 +1,10 @@
 import ProfileButton from "../components/ProfileButton";
 import Image from 'next/image'
+import type { Metadata } from "next";
+
+export const metadata: Metadata ={
+  title: "About"
+};
 
 export default function About(){
     return (
