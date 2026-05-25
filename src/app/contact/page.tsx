@@ -1,5 +1,3 @@
-"use client"
-
 import ContactPage from "../components/ContactPage";
 import type { Metadata } from "next";
 
