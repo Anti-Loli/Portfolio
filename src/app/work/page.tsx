@@ -1,53 +1,75 @@
+"use client"
+
 import WorkButton from '../components/WorkButton';
+import Slider from "react-slick"; 
 import type { Metadata } from "next";
 
+{/*
 export const metadata: Metadata ={
   title: "Work"
 };
+*/}
 
+const sliderSettings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+};
+
+const buttonData = [
+{
+  href: "/burgers",
+  imageSource: "/BurgerWBPic.png",
+  name: "Bald Eagle Burgers",
+  engine: "Unreal Engine 5",
+  date: "7/5/2024"
+},
+{
+  href: "/chaos",
+  imageSource: "/ChaosWBPic.jpg",
+  name: "Choas at Circus Baby's",
+  engine: "Unreal Engine 5",
+  date: "7/5/2024"
+},
+{
+  href: "/Talimentals",
+  imageSource: "/TalimentalsWBPic.png",
+  name: "Talimentals",
+  engine: "Unity",
+  date: "12/8/2022"
+},
+{
+  href: "/gamder",
+  imageSource: "/GamderWBPic.png",
+  name: "Gamder",
+  engine: "React Native",
+  date: "5/2/23"
+},
+{
+  href: "/TimeForce",
+  imageSource: "/TimeForceWBPic.png",
+  name: "Power Rangers: Quantum Quest",
+  engine: "Unity",
+  date: "2/22/23"
+},
+];
 
 export default function Work(){
     return (
-     <main className="flex flex-1 justify-center items-center h-screen">
-       <WorkButton
-        href = "/burgers"
-        imageSource="/BurgerWBPic.png"
-        name="Bald Eagle Burgers"
-        engine="Unreal Engine 5"
-        date="7/5/2024"
-      />
-
-      <WorkButton
-        href = "/chaos"
-        imageSource="/ChaosWBPic.jpg"
-        name="Chaos at Circus Baby's"
-        engine="Unreal Engine 5"
-        date="1/10/2024"
-      />
-
-      <WorkButton
-        href = "/Talimentals"
-        imageSource="/TalimentalsWBPic.png"
-        name="Talimentals"
-        engine="Unity"
-        date="12/8/2022"
-      />
-
-      <WorkButton
-        href = "/gamder"
-        imageSource="/GamderWBPic.png"
-        name="Gamder"
-        engine="React Native"
-        date="5/2/23"
-      />
-
-      <WorkButton
-        href = "/TimeForce"
-        imageSource="/TimeForceWBPic.png"
-        name="Power Rangers: Quantum Quest"
-        engine="Unity"
-        date="2/22/23"
-      />
+     <main className="flex justify-center items-center h-screen">
+       <div className="w-full max-w-7xl">
+          <Slider {...sliderSettings}>
+            {buttonData.map((buttonData) => (
+            <WorkButton
+              key={buttonData.href}
+              {... buttonData}
+              />
+          ))}
+        </Slider>
+       </div>
+      
      </main>
   );
 }
