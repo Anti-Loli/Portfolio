@@ -17,8 +17,8 @@ export default function RootLayout({children,}: Readonly<{ children: React.React
   return (
     <html lang="en">
       <body className= "flex flex-col min-h-screen">
-        <header className = "grid grid-cols-5 place-items-center"> 
-          <div className="flex flex-row gap-2 p-2 text-white text-xl items-center col-start-5">
+        <header className = "grid grid-cols-1 md:grid-cols-5 place-items-center"> 
+          <div className="flex flex-row gap-2 p-2 text-white text-lg md:text-xl items-center col-start-3 md:col-start-5">
             Hunter Hockman 
             <Image
               src="/ProfilePicture.jpg"
@@ -29,7 +29,7 @@ export default function RootLayout({children,}: Readonly<{ children: React.React
           </div>
 
           <nav className = "flex justify-center col-start-3">
-            <ul className="flex flex-row text-5xl text-white gap-36">
+            <ul className="flex flex-row text-2xl md:text-5xl text-white gap-4 md:gap-36">
               <Link href = "/"> home</Link>
               <Link href = "/about"> about</Link>
               <Link href = "/links"> links</Link>
