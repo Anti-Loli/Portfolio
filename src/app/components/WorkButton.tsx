@@ -12,12 +12,12 @@ type ButtonProps = {
 
 export default function WorkButton({href, className, imageSource, name, engine, date}: ButtonProps)
 {
-    const baseStyles = "w-24 md:w-45 lg:w-72 h-90 md:h-135 lg:h-180 bg-white font-bold rounded-lg cursor-pointer text-base m-3 flex flex-col justify-center items-center text-center";
+    const baseStyles = "w-22 md:w-45 xl:w-72 h-90 md:h-135 lg:h-180 bg-white font-bold rounded-lg cursor-pointer text-base m-3 flex flex-col justify-center items-center text-center";
 
         return(
             <Link href={href as string}>
                 <div  className={`${baseStyles} ${className || ""}`}>
-                    <div className="relative min-w-2/3 md:w-full h-1/2 md:h-2/3">
+                    <div className="relative min-w-2/3 md:w-3/4 lg:w-full h-1/2 lg:h-2/3">
                          <Image
                             src={imageSource}
                             alt="Cover picture for this given project"
