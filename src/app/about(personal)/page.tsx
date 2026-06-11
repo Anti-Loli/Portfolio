@@ -11,7 +11,7 @@ export default function AboutPersonal(){
       return (
     <main className="flex flex-1 justify-center items-center h-screen">
           <div className="bg-white shadow-lg rounded-xl p-6 justify-center items-start mx-auto my-auto flex gap-x-4">
-                  <div className="grid grid-cols-2 gap-6">
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                     {/*Left green info side*/}
                     <div className="flex flex-col gap-4"> 
                         <div> 
@@ -43,7 +43,7 @@ export default function AboutPersonal(){
                     {/*Right profile side*/}
                     <div className="flex flex-col gap-4"> 
                           <div> 
-                            <ProfileButton className="w-192 h-24 !text-black bg-white rounded-lg cursor-pointer text-base block m-3"> Personal </ProfileButton> 
+                            <ProfileButton className="w-72 lg:w-84 xl:w-192 h-24 !text-black bg-white rounded-lg text-base block m-3"> Personal </ProfileButton> 
                           </div> 
                         <div className="row-span-4 bg-gray-500 text-white"> 
                           <div className="text-xl">Hunter Hockman</div>

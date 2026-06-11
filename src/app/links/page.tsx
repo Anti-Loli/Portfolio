@@ -9,7 +9,7 @@ export const metadata: Metadata ={
 export default function Links(){
     return (
     <main className="flex flex-1 justify-center items-center h-screen">
-      <div className="grid grid-cols-4">
+      <div className="grid grid-cols-1 md:grid-cols-4">
         
         <IconButton imageSource = "/ButtonIcons/linkedin.png" href = "https://www.linkedin.com/in/hunter-hockman/">
           LinkedIn 

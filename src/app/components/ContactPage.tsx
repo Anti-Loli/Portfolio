@@ -41,28 +41,28 @@ export default function ContactPage(){
   
   return (
         <main className="bg-white shadow-lg rounded-xl p-6 justify-center items-start mx-auto my-auto">
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/*Left green info side*/}
             <div className="flex flex-col gap-4"> 
-              <p className="text-5xl text-center">Contact Page</p>
+              <p className="text-3xl md:text-5xl text-center">Contact Page</p>
                       
-              <div className="text-3xl text-center">
+              <div className="text-xl md:text-3xl text-center">
                 <p>The best way to contact me is via email.</p>
                 <p>Feel free to email me at the address below,</p>
                 <p>or fill out the provided form.</p>
               </div>
                       
 
-                <p className="text-3xl text-center">
+                <p className="text-xl md:text-3xl text-center">
                 HunterHockman@outlook.com
               </p>
                           
                 <form className="flex flex-col gap-4" onSubmit={onSubmit}>
-                    <label className='text-2xl'>Name: <input className='outline-2' type="text" value={name} onChange={(e) => setName(e.target.value)} name="name" minLength={5} maxLength={50} required /></label>
-                    <label className='text-2xl'>Email: <input className='outline-2' type="email" value={email} onChange={(e) => setEmail(e.target.value)} name="email" required/></label>
-                    <label className='text-2xl'>Message: <textarea className='outline-2 w-96' name="message" value={message} onChange={(e) => setMessage(e.target.value)} maxLength={200} required/></label>
+                    <label className='text-lg md:text-2xl'>Name: <input className='outline-2' type="text" value={name} onChange={(e) => setName(e.target.value)} name="name" minLength={5} maxLength={50} required /></label>
+                    <label className='text-lg md:text-2xl'>Email: <input className='outline-2' type="email" value={email} onChange={(e) => setEmail(e.target.value)} name="email" required/></label>
+                    <label className='text-lg md:text-2xl'>Message: <textarea className='outline-2 w-48 md:w-96' name="message" value={message} onChange={(e) => setMessage(e.target.value)} maxLength={200} required/></label>
 
-                    <button type ="submit" className = "bg-[#107C10] text-white text-3xl">
+                    <button type ="submit" className = "bg-[#107C10] text-white text-2xl md:text-3xl">
                        Send email
                     </button> 
                 </form>          
@@ -80,16 +80,16 @@ export default function ContactPage(){
                       height={75}
                     /> 
           
-                    <ul className="text-left  text-xl">
+                    <ul className="text-left text-lg md:text-xl">
                       <li>Software Developer with a</li>
                       <li>Specialty in game and simulation programming</li>
                       <li>Correctional Officer for the FBOP</li>
                     </ul>
                   </div>
           
-                    <div className="text-2xl pl-2.5 pt-2"> Maryland</div>
+                    <div className="text-xl md:text-2xl pl-2.5 pt-2"> Maryland</div>
           
-                    <div className="text-2xl leading-10 pl-2.5"> 
+                    <div className="text-xl md:text-2xl leading-10 pl-2.5"> 
                     <ul>
                         <li> Tools: Unreal Engine, Unity 2D/3D, Blender, Visual Studio 2022,</li>
                         <li> Visual Studio Code, Notion, GameMaker Studio 2, MySQL Workbench,  </li>    
