@@ -32,7 +32,7 @@ const buttonData = [
 {
   href: "/chaos",
   imageSource: "/ChaosWBPic.jpg",
-  name: "Choas at Circus Baby's",
+  name: "Chaos at Circus Baby's",
   engine: "Unreal Engine 5",
   date: "7/5/2024"
 },

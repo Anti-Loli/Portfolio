@@ -16,7 +16,7 @@ export default function Project({imageSource, downloadURL, repoURL, title, descr
     return (
         <main className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
            {/*Buttons*/}
-            <div className="ml-16">
+            <div className="ml-10 lg:ml-16">
                 <Button href={downloadURL}> Download </Button>
                 <Button href={repoURL}> Github Repo</Button>
             </div>
