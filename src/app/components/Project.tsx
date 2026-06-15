@@ -14,25 +14,25 @@ type ProjectProps= {
 
 export default function Project({imageSource, downloadURL, repoURL, title, description, toolsUsed, languagesUsed} : ProjectProps){
     return (
-        <main className="flex flex-1 gap-16  items-center ml-30">
+        <main className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
            {/*Buttons*/}
-            <div>
+            <div className="ml-16">
                 <Button href={downloadURL}> Download </Button>
                 <Button href={repoURL}> Github Repo</Button>
             </div>
                 
             {/*Screenshot*/}
-            <div >
+            <div className="relative w-full h-100">
                 <Image
                     src={imageSource}
                     alt="Screenshot of this given project"
-                    width={1000}
-                    height={720}
+                    fill
+                    sizes="100vw"
                 />
             </div>
             
             {/*Text*/}
-            <div className=" text-white">
+            <div className=" text-white text-center xl:text-left">
                 <p className="text-5xl pb-2">
                     {title}
                 </p>

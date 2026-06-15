@@ -10,6 +10,9 @@ export const metadata: Metadata ={
 };
 */}
 
+{/*
+  Slider Breakpoints
+*/}
 const sliderSettings = {
     dots: false,
     infinite: true,
