@@ -1,5 +1,10 @@
+"use client"
+
 import Button from "./Button";
+import IconButton from "./IconButton";
 import Image from 'next/image'
+import { useRouter } from "next/navigation";
+
 
 type ProjectProps= {
     className?: string;
@@ -13,12 +18,16 @@ type ProjectProps= {
 }
 
 export default function Project({imageSource, downloadURL, repoURL, title, description, toolsUsed, languagesUsed} : ProjectProps){
+    
+    const router = useRouter();
+
     return (
         <main className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
            {/*Buttons*/}
             <div className="ml-10 lg:ml-16">
-                <Button href={downloadURL}> Download </Button>
-                <Button href={repoURL}> Github Repo</Button>
+                <IconButton imageSource = "/ButtonIcons/download.png" href={downloadURL}> Download </IconButton>
+                <IconButton imageSource = "/ButtonIcons/github.png" href={repoURL}> Github Repo</IconButton>
+                <IconButton imageSource="/ButtonIcons/back.png" onClick={router.back}>Back</IconButton>
             </div>
                 
             {/*Screenshot*/}

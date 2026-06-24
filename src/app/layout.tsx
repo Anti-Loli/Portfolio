@@ -29,7 +29,7 @@ export default function RootLayout({children,}: Readonly<{ children: React.React
           </div>
 
           <nav className = "flex justify-center col-start-2 lg:col-start-3">
-            <ul className="flex flex-row text-2xl xl:text-5xl text-white gap-4 md:gap-8 lg:gap-18 xl:gap-36 mr-4 lg:mr-0">
+            <ul className="flex flex-row text-2xl xl:text-5xl text-white gap-4 md:gap-8 lg:gap-18 xl:gap-36 mr-2 lg:mr-0">
               <Link href = "/"> home</Link>
               <Link href = "/about"> about</Link>
               <Link href = "/links"> links</Link>

@@ -62,7 +62,7 @@ const buttonData = [
 export default function Work(){
     return (
      <main className="flex justify-center items-center h-screen">
-       <div className="w-full max-w-7xl">
+       <div className="w-full max-w-7xl ml-8">
           <Slider {...sliderSettings}>
             {buttonData.map((buttonData) => (
             <WorkButton
