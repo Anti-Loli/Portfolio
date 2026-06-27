@@ -18,7 +18,7 @@ export default function Home() {
           <button className="col-span-1 xl:col-span-2 row-span-1 xl:row-span-2 h-auto w-auto bg-[#107C10] text-white font-bold rounded-lg text-base m-3">
             <h1 className="text-3xl md:text-4xl xl:text-6xl mb-12 xl:mb-24">Hello, I’m Hunter</h1> 
             <p className="text-2xl xl:text-4xl break-all ">Software Developer</p>
-            <p className="text-2xl xl:text-4xl break-all ">and Correctional Officer</p>
+            <p className="text-2xl xl:text-4xl break-all ">and Unit Secretary</p>
           </button>
 
           <IconButton imageSource = "/ButtonIcons/link.png" href = "/links">

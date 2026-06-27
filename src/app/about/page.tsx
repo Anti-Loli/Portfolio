@@ -19,15 +19,14 @@ export default function About(){
                   </div> 
                       <div className="outline-2 px-4 py-10 bg-[#107C10] text-white"> 
                         
-                        <p className="text-xl">Hi I’m Hunter, a software developer with specialties in game and simulation programming.</p>
+                        <p className="text-xl">Hi I’m Hunter, a software developer with specialties in <br/> web, game, and application development.</p>
                         <p className="text-xl">I... </p>
                         
                       <ul className="list-disc pl-4 text-lg leading-8">
-                          <li>design and develop gameplay mechanics in Unity and/or Unreal Engine,</li>
-                          <li>develop desktop applications using .NET,</li>
-                          <li>create game design documents,</li>
-                          <li>create and manage databases, and</li>
-                          <li>do frontend web development with React and Next.JS</li>
+                          <li>do front and backend web development,</li>
+                          <li>develop gameplay mechanics and systems,</li>
+                          <li>develop desktop and mobile applications, and</li>
+                          <li>create and manage database systems.</li>
                       </ul> 
       
                         <div className="font-bold text-2xl">Education</div>
@@ -56,9 +55,9 @@ export default function About(){
                         /> 
       
                         <ul className="text-left  text-xl">
-                          <li>Software Developer with a</li>
-                          <li>Specialty in game and simulation programming</li>
-                          <li>Correctional Officer for the FBOP</li>
+                          <li>Software Developer with</li>
+                          <li>Specialties in web, game, and application development</li>
+                          <li>Currently a Unit Secretary for the BOP</li>
                         </ul>
                       </div>
       

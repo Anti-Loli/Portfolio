@@ -56,9 +56,9 @@ export default function AboutPersonal(){
                             /> 
           
                             <ul className="text-left  text-xl">
-                              <li>Software Developer with a</li>
-                              <li>Specialty in game and simulation programming</li>
-                              <li>Correctional Officer for the FBOP</li>
+                              <li>Software Developer with</li>
+                              <li>Specialties in web, game, and application development</li>
+                              <li>Currently a Unit Secretary for the BOP</li>
                             </ul>
                           </div>
           
