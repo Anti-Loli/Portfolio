@@ -2,9 +2,9 @@ import Project from "../components/Project";
 
 export default function TimeForce(){
   return (
-    <main className="flex flex-1 justify-center items-stretch h-screen bg-center bg-cover" style={{backgroundImage: `url(/TimeForceSC.png)`}}>
+    <main className="flex flex-1 justify-center items-stretch h-screen bg-center bg-cover" style={{backgroundImage: `url()`}}>
          <Project
-            imageSource="/TimeForceBG.png"
+            imageSources={["/TimeForceBG.png", "/TimeForceSC.png"]}
             downloadURL="https://hunter-hawkman.itch.io/power-rangers-timeforce-quantum-quest"
             repoURL="/nopage(GitHub)"
             title="Power Rangers Time Force: Quantum Quest"

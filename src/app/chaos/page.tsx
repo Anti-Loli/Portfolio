@@ -4,7 +4,7 @@ export default function chaos(){
   return (
     <main className="flex flex-1 justify-center items-stretch h-screen bg-center bg-cover" style={{backgroundImage: `url(/)`}}>
          <Project
-            imageSource="/Steven.jpg"
+            imageSources={["/Steven.jpg"]}
             downloadURL="https://hunter-hawkman.itch.io/chaos-at-circus-babys"
             repoURL="https://github.com/Anti-Loli/Capstone"
             title="Chaos at Circus Baby's"

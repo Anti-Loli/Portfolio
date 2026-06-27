@@ -2,9 +2,9 @@ import Project from "../components/Project";
 
 export default function burgers(){
   return (
-    <main className="flex flex-1 justify-center items-stretch h-screen bg-center bg-cover" style={{backgroundImage: `url(/BurgerSC.png)`}}>
+    <main className="flex flex-1 justify-center items-stretch h-screen bg-center bg-cover">
          <Project
-            imageSource="/BurgerBG.png"
+            imageSources={["/BurgerBG.png"]}
             downloadURL="https://shadestudiosgames.itch.io/bald-eagle-burgers"
             repoURL="https://github.com/StevenM2020/BulletHellGameJam"
             title="Bald Eagle Burgers: the Fight for American Independence"

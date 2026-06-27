@@ -1,14 +1,14 @@
 "use client"
 
-import Button from "./Button";
 import IconButton from "./IconButton";
 import Image from 'next/image'
 import { useRouter } from "next/navigation";
+import Slider from "react-slick"; 
 
 
 type ProjectProps= {
     className?: string;
-    imageSource: string; //url for the prokect screenshot
+    imageSources: string[];//array for image slider urls
     downloadURL: string;//url for the download page for the project
     repoURL: string;//url for the GitHub repo
     title: string;//Project title
@@ -17,9 +17,17 @@ type ProjectProps= {
     languagesUsed: string[];//Array for coding languages used in the project
 }
 
-export default function Project({imageSource, downloadURL, repoURL, title, description, toolsUsed, languagesUsed} : ProjectProps){
+export default function Project({imageSources, downloadURL, repoURL, title, description, toolsUsed, languagesUsed} : ProjectProps){
     
     const router = useRouter();
+
+    const sliderSettings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    };
 
     return (
         <main className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
@@ -31,13 +39,20 @@ export default function Project({imageSource, downloadURL, repoURL, title, descr
             </div>
                 
             {/*Screenshot*/}
-            <div className="relative w-full h-100">
-                <Image
-                    src={imageSource}
-                    alt="Screenshot of this given project"
-                    fill
-                    sizes="100vw"
-                />
+            <div  className="relative w-full h-100">
+                <Slider {...sliderSettings}>
+                    {imageSources.map((item, index) => (
+                            <Image
+                                key = {index}
+                                src={item}
+                                alt="Screenshot of this given project"
+                                height={1080}
+                                width={720}
+                            />
+                        ))}
+                </Slider>
+                
+                
             </div>
             
             {/*Text*/}
