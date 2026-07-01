@@ -23,6 +23,13 @@ const sliderSettings = {
 
 const buttonData = [
 {
+  href: "/portfolio",
+  imageSource: "/BurgerWBPic.png",
+  name: "My Portfolio Site",
+  engine: "Next.js",
+  date: "7/1/2026"
+},
+{
   href: "/burgers",
   imageSource: "/BurgerWBPic.png",
   name: "Bald Eagle Burgers",
@@ -34,7 +41,7 @@ const buttonData = [
   imageSource: "/ChaosWBPic.jpg",
   name: "Chaos at Circus Baby's",
   engine: "Unreal Engine 5",
-  date: "7/5/2024"
+  date: "12/5/2023"
 },
 {
   href: "/Talimentals",

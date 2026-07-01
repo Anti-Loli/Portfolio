@@ -4,7 +4,7 @@ export default function burgers(){
   return (
     <main className="flex flex-1 justify-center items-stretch h-screen bg-center bg-cover">
          <Project
-            imageSources={["/BurgerBG.png"]}
+            imageSources={["/BurgerBG.png", "/BurgerBG2.png", "/BurgerBG3.png", "/BurgerBG4.png", "/BurgerBG5.png"]}
             downloadURL="https://shadestudiosgames.itch.io/bald-eagle-burgers"
             repoURL="https://github.com/StevenM2020/BulletHellGameJam"
             title="Bald Eagle Burgers: the Fight for American Independence"

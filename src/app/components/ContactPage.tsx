@@ -81,26 +81,23 @@ export default function ContactPage(){
                     /> 
           
                     <ul className="text-left text-lg md:text-xl">
-                      <li>Software Developer with a</li>
-                      <li>Specialty in game and simulation programming</li>
-                      <li>Correctional Officer for the FBOP</li>
+                      <li>Software Developer with</li>
+                      <li>Specialties in web and application development</li>
+                      <li>Currently a Unit Secretary for the BOP</li>
                     </ul>
                   </div>
           
                     <div className="text-xl md:text-2xl pl-2.5 pt-2"> Maryland</div>
           
-                    <div className="text-xl md:text-2xl leading-10 pl-2.5"> 
-                    <ul>
-                        <li> Tools: Unreal Engine, Unity 2D/3D, Blender, Visual Studio 2022,</li>
-                        <li> Visual Studio Code, Notion, GameMaker Studio 2, MySQL Workbench,  </li>    
-                        <li> Github, Ubuntu</li>
-                    </ul>
-          
-                    <ul>
-                        <li> Development: C++, C#, .NET,  Java, JavaScript, Next.JS,  </li>
-                        <li> HTML, CSS, PHP, React, React Native, Python, Linux, </li>
-                        <li> x86 64-bit Assembly</li>
-                    </ul>                
+                    <div className="text-xl leading-8.5 pl-2.5"> 
+                      <ul>
+                          <li>Programming Languages: C#, C++, JavaScript, TypeScript, Java, Python</li>
+                          <li>Frontend frameworks: React, React Native, Next.js, Tailwind CSS</li>
+                          <li>Backends & APIs: Node.js, REST APIs, Resend API</li>
+                          <li>Databases: MySQL</li>
+                          <li>Game Engines: Unity, Unreal Engine</li>
+                          <li>Tools & Platforms: Git, GitHub, Visual Studio, VS Code, Blender, Figma, Vercel</li>
+                      </ul>
                     </div>
                 </div>
             </div> 

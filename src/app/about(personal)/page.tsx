@@ -35,7 +35,6 @@ export default function AboutPersonal(){
                               <li>Movie: TMNT (1990) </li>
                               <li>Show: Frieren: Beyond Journey&apos;s End</li>
                               <li>Game: Clair Obscur: Expedition 33</li>
-                              <li>Comic: Power Rangers</li>
                             </ul> 
                           </div> 
                       </div> 
@@ -46,7 +45,7 @@ export default function AboutPersonal(){
                             <ProfileButton className="w-72 lg:w-84 xl:w-192 h-24 !text-black bg-white rounded-lg text-base block m-3"> Personal </ProfileButton> 
                           </div> 
                         <div className="row-span-4 bg-gray-500 text-white"> 
-                          <div className="text-xl">Hunter Hockman</div>
+                          <div className="text-2xl">Hunter Hockman</div>
                           <div className="grid grid-flow-col bg-white text-black"> 
                             <Image
                               src="/ProfilePicture.jpg"
@@ -57,25 +56,22 @@ export default function AboutPersonal(){
           
                             <ul className="text-left  text-xl">
                               <li>Software Developer with</li>
-                              <li>Specialties in web, game, and application development</li>
+                              <li>Specialties in web and application development</li>
                               <li>Currently a Unit Secretary for the BOP</li>
                             </ul>
                           </div>
           
                           <div className="text-2xl pl-2.5 pt-2"> Maryland</div>
           
-                          <div className="text-2xl leading-10 pl-2.5"> 
+                         <div className="text-xl leading-8.5 pl-2.5"> 
                             <ul>
-                                <li> Tools: Unreal Engine, Unity 2D/3D, Blender, Visual Studio 2022,</li>
-                                <li> Visual Studio Code, Notion, GameMaker Studio 2, MySQL Workbench,  </li>    
-                                <li> Github, Ubuntu</li>
+                              <li>Programming Languages: C#, C++, JavaScript, TypeScript, Java, Python</li>
+                              <li>Frontend frameworks: React, React Native, Next.js, Tailwind CSS</li>
+                              <li>Backends & APIs: Node.js, REST APIs, Resend API</li>
+                              <li>Databases: MySQL</li>
+                              <li>Game Engines: Unity, Unreal Engine</li>
+                              <li>Tools & Platforms: Git, GitHub, Visual Studio, VS Code, Blender, Figma, Vercel</li>
                             </ul>
-          
-                            <ul>
-                                <li> Development: C++, C#, .NET, Java, JavaScript, Next.JS,  </li>
-                                <li> HTML, CSS, PHP, React, React Native, Python, Linux, </li>
-                                <li> x86 64-bit Assembly</li>
-                            </ul>                
                           </div>
                         </div>
                     </div> 
