@@ -59,7 +59,7 @@ const buttonData = [
 },
 {
   href: "/TimeForce",
-  imageSource: "/Timeforce/TimeForceWBPic.png",
+  imageSource: "/TimeForce/TimeForceWBPic.png",
   name: "Power Rangers: Quantum Quest",
   engine: "Unity",
   date: "2/22/23"
