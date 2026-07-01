@@ -4,7 +4,7 @@ export default function TimeForce(){
   return (
     <main className="flex flex-1 justify-center items-stretch h-screen bg-center bg-cover">
          <Project
-            imageSources={["/TimeForceBG.png", "/TimeForceBG2.png", "/TimeForceBG3.png", "/TimeForceBG4.png", "/TimeForceBG5.png", "/TimeForceBG6.png"]}
+            imageSources={["/TimeForce/TimeForceBG.png", "/TimeForce/TimeForceBG2.png", "/TimeForce/TimeForceBG3.png", "/TimeForce/TimeForceBG4.png", "/TimeForce/TimeForceBG5.png", "/TimeForce/TimeForceBG6.png"]}
             downloadURL="https://hunter-hawkman.itch.io/power-rangers-timeforce-quantum-quest"
             repoURL="/nopage(GitHub)"
             title="Power Rangers Time Force: Quantum Quest"

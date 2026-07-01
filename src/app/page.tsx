@@ -33,6 +33,7 @@ export default function Home() {
             Contact 
           </IconButton>
 
+          {/*
           <IconButton imageSource = "/ButtonIcons/book.png">
             Fun Facts 
           </IconButton>
@@ -44,7 +45,10 @@ export default function Home() {
           <IconButton imageSource = "/ButtonIcons/sound.png">
             Sound On/Off
           </IconButton>
-          
+          */}
+          <Button/>
+          <Button/>
+          <Button/>
           <Button/>
       </div>
     </main>

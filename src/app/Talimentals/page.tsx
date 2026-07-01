@@ -4,7 +4,7 @@ export default function Talimentals(){
   return (
     <main className="flex flex-1 justify-center items-stretch h-screen bg-center bg-cover">
          <Project
-            imageSources={["/TalimentalsBG.png","/TalimentalsBG2.png","/TalimentalsBG3.png","/TalimentalsBG4.png","/TalimentalsBG5.png"]}
+            imageSources={["/Talimentals/TalimentalsBG.png","/Talimentals/TalimentalsBG2.png","/Talimentals/TalimentalsBG3.png","/Talimentals/TalimentalsBG4.png","/Talimentals/TalimentalsBG5.png"]}
             downloadURL="https://hunter-hawkman.itch.io/talimentals"
             repoURL="https://github.com/Anti-Loli/Gameder" 
             title="Tailmentals"

@@ -24,14 +24,14 @@ const sliderSettings = {
 const buttonData = [
 {
   href: "/portfolio",
-  imageSource: "/BurgerWBPic.png",
+  imageSource: "/Portfolio/PortfolioBG.png",
   name: "My Portfolio Site",
   engine: "Next.js",
   date: "7/1/2026"
 },
 {
   href: "/burgers",
-  imageSource: "/BurgerWBPic.png",
+  imageSource: "/Burger/BurgerWBPic.png",
   name: "Bald Eagle Burgers",
   engine: "Unreal Engine 5",
   date: "7/5/2024"
@@ -45,21 +45,21 @@ const buttonData = [
 },
 {
   href: "/Talimentals",
-  imageSource: "/TalimentalsWBPic.png",
+  imageSource: "/Talimentals/TalimentalsWBPic.png",
   name: "Talimentals",
   engine: "Unity",
   date: "12/8/2022"
 },
 {
   href: "/gamder",
-  imageSource: "/GamderWBPic.png",
+  imageSource: "/Gamder/GamderWBPic.png",
   name: "Gamder",
   engine: "React Native",
   date: "5/2/23"
 },
 {
   href: "/TimeForce",
-  imageSource: "/TimeForceWBPic.png",
+  imageSource: "/Timeforce/TimeForceWBPic.png",
   name: "Power Rangers: Quantum Quest",
   engine: "Unity",
   date: "2/22/23"
